@@ -5,18 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apostolos Barber College</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <h1 class="bg-blue-600">
-        Welcome to Apostolos Barber College
-    </h1>
+<!--Preloader-->
+<div id="preloader" class="preloader">
+    <div id="ball" class="ball"></div>
+  </div>
+
+    <!--Main navigation-->
+    <nav id="nav" class="text-white p-4 flex justify-between items-center">
+        <!-- Left: Social Media Links -->
+        <div class="flex space-x-4">
+          <a href="https://github.com/thekamiyeoladipo" aria-label="Twitter">
+            <!-- Github Icon -->
+            <i class= "icon bi bi-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/kamiyeoladipo/" aria-label="LinkedIn">
+            <!-- LinkedIn Icon -->
+            <i class="icon bi bi-linkedin"></i>
+          </a>
+          <a href="https://x.com/kamiyeoladiipo" aria-label="twitter">
+            <!-- X Icon -->
+            <i class="icon bi bi-twitter-x"></i>
+          </a>
+        </div>
+      
+        <!-- Center: Logo -->
+        <!-- <div class="text-center"> -->
+          <!-- <img id="logo" src="img/Property 1=Type84.png" alt=""> -->
+          
+          <!-- <a id="logo" href="#" data-wow-delay=".5s" class="wow slideInDown text-2xl font-bold"></a> -->
+        <!-- </div> -->
+      
+        <!-- Right: Navlinks -->
+        <div class="hidden lg:flex space-x-8">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">About</a>
+          <a href="#" class="hover:text-gray-300">Courses/Programs</a>
+          <a href="#" class="hover:text-gray-300">Reviews</a>
+          <!-- CTA Button -->
+<a href="#"
+class=" px-4 border border-white text-white font-medium rounded-md hover:bg-white hover:text-black transition duration-300">
+Join Us
+</a>
+
+          
+          <!-- <a id="cv" href="#contact" class="hover:text-gray-300"><b>CV</b></a> -->
+        </div>
+      
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden mt-2">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          </button>
+        </div>
+      </nav>
+      
+      <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 left-0 w-2/4 h-full text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50"> 
+      <button id="close-menu-btn" class="p-4 opacity-0">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+      <nav class="mt-10 space-y-4">
+        <ul>
+          <li><a href="#home" class="block px-5 py-2 opacity-0">Home</a></li>
+          <li><a href="#about" class="block px-5 py-2 opacity-0">About the college</a></li>
+          <li><a href="#portfolio" class="block px-5 py-2 opacity-0">Our Courses & Programs</a></li>
+          <li><a href="#contact" class="block px-5 py-2 opacity-0">Testimonials<a></li>
+            <li><a href="#contact" class="block px-5 py-2 opacity-0">Join us<a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+   
+
+
+
+
+
 
 
 
 
 
     <script src="script.js"></script>
-    
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>

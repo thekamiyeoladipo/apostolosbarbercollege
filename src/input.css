@@ -2,3 +2,191 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    font-family: "Poppins", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;   
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+    
+}
+
+p {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/* Preloader */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white !important;
+    border-radius: 50%;
+    animation: bounce 1s ease infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-100px);
+    }
+    60% {
+      transform: translateY(-50px);
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+  }
+  
+  .content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease;
+  }
+  
+  .content.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .main-content {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  #nav {
+      padding: 1.5rem 5rem;
+      background-color: black;
+  }
+  
+  #nav a {
+    font-family: "Poppins", sans-serif;
+    transition: all .2s ease-in-out;
+  }
+  #nav a:hover {
+    border-color: #ff4500;
+    color: #ff4500;
+    transform: scale(1.05);
+  }
+  #nav .icon {
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out; /* Smooth transition */
+  }
+  
+  #nav .icon:hover {
+    transform: scale(1.05) !important;
+  }
+  
+  #nav a span {
+    color: #ff4500;
+  }
+  
+  #nav #logo {
+    font-size: 1.5rem;
+    transition: all .2s ease-in-out;
+  
+  }
+  
+  #nav #logo:hover {
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  #cv {
+    border: 1px solid white;
+    padding: 0 1.4rem;
+  }
+  @media (max-width: 768px) {
+     #nav {
+      padding: 1rem 1rem;
+     }
+  }
+  
+  /* Slide-in from left with slower animation */
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  #mobile-menu button,
+  #mobile-menu nav ul li a {
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+  
+  #mobile-menu.open button {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+  }
+  
+  #mobile-menu.open nav ul li:nth-child(1) a {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    animation-delay: 0.4s;
+  }
+  
+  #mobile-menu.open nav ul li:nth-child(2) a {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  #mobile-menu.open nav ul li:nth-child(3) a {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    animation-delay: 0.6s;
+  }
+  
+  #mobile-menu.open nav ul li:nth-child(4) a {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    animation-delay: .7s;
+  }
+  
+  #mobile-menu {
+    background-color: #212529;
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
