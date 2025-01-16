@@ -44,8 +44,8 @@ section {
 /* Back to top button  */
 #back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 25px;
+  right: 25px;
   background-color: black;
   color: white;
   border: none;
@@ -60,6 +60,7 @@ section {
   transition: opacity 0.3s, visibility 0.3s;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  text-align: center;
 }
 
 #back-to-top:hover {
