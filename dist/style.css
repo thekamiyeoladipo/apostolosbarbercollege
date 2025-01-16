@@ -582,12 +582,12 @@ video {
   top: 0px;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mb-2 {
@@ -840,19 +840,6 @@ video {
   z-index: 0;
 }
 
-.btn-primary {
-  background-color: #1d4ed8;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #1e40af;
-}
-
 * {
   font-family: "Poppins", serif !important;
   margin: 0;
@@ -897,13 +884,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 50;
+  z-index: 999;
 }
 
 .ball {
-  width: 20px;
-  height: 20px;
-  background-color: white !important;
+  width: 40px;
+  height: 40px;
+  /* background-color: white !important; */
   border-radius: 50%;
   animation: bounce 1s ease infinite;
 }
