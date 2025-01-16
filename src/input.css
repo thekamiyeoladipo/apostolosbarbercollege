@@ -303,6 +303,7 @@ section {
   /* About Section */
   #about {
     background-color: #143FDB;
+    overflow: hidden;
   }
 
   /* Programs Section  */

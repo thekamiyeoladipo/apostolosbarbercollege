@@ -679,6 +679,10 @@ video {
   height: 100vh;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -1391,6 +1395,7 @@ section {
 
 #about {
   background-color: #143FDB;
+  overflow: hidden;
 }
 
 /* Programs Section  */
