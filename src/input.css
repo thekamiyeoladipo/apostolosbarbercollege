@@ -41,6 +41,35 @@ section {
   padding-bottom: 90px;
 }
 
+/* Back to top button  */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#back-to-top:hover {
+  background-color: #444;
+}
+
+#back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 /* Preloader */
 .preloader {
     position: fixed;
