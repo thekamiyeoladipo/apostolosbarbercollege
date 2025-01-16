@@ -75,3 +75,26 @@ backToTopBtn.addEventListener('click', () => {
 
 
 
+//cookies
+const cookieBanner = document.getElementById('cookie-banner');
+const acceptCookiesBtn = document.getElementById('accept-cookies');
+
+// Check if the cookie consent has already been given
+if (document.cookie.split('; ').find(row => row.startsWith('cookieConsent='))) {
+  cookieBanner.style.display = 'none'; // Hide banner if consent is already given
+}
+
+// Handle the Accept button click
+acceptCookiesBtn.addEventListener('click', () => {
+  // Set a cookie with an expiry date
+  document.cookie = "cookieConsent=true; path=/; max-age=" + 60 * 60 * 24 * 365; // 1 year
+  cookieBanner.style.display = 'none'; // Hide banner
+});
+
+setTimeout(() => {
+  if (!document.cookie.split('; ').find(row => row.startsWith('cookieConsent='))) {
+    cookieBanner.style.display = 'block'; // Show banner after a delay
+  }
+}, 2000); // Delay in milliseconds (e.g., 2000ms = 2 seconds)
+
+
