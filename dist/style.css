@@ -1259,6 +1259,7 @@ section {
   /* Make sure it spans the entire width */
   z-index: 100;
   /* Optional, to ensure the nav stays above other elements */
+  overflow: hidden;
 }
 
 #nav::before {
@@ -1390,6 +1391,12 @@ section {
 
 #about {
   background-color: #143FDB;
+}
+
+/* Programs Section  */
+
+#courses {
+  overflow: hidden;
 }
 
 .before\:inline-block::before {

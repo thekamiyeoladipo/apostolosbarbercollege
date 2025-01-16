@@ -144,6 +144,7 @@ section {
     right: 0;
     width: 100%;  /* Make sure it spans the entire width */
     z-index: 100;  /* Optional, to ensure the nav stays above other elements */
+    overflow: hidden;
   }
 
   #nav::before {
@@ -302,6 +303,11 @@ section {
   /* About Section */
   #about {
     background-color: #143FDB;
+  }
+
+  /* Programs Section  */
+  #courses {
+    overflow: hidden;
   }
 
 
