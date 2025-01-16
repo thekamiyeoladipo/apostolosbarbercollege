@@ -36,6 +36,11 @@ p {
     font-weight: normal;
 }
 
+section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
 /* Preloader */
 .preloader {
     position: fixed;
@@ -261,5 +266,10 @@ p {
     }
   }
   
+
+  /* About Section */
+  #about {
+    background-color: #143FDB;
+  }
 
 
