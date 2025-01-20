@@ -61,6 +61,7 @@ section {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: center;
+  z-index: 999999999;
 }
 
 #back-to-top:hover {
@@ -312,3 +313,20 @@ section {
   }
 
 
+  /* Why Choose us */
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Footer  */
+  /* footer {
+    background-color: #92a3e0;
+  } */

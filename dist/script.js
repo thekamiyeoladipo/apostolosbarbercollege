@@ -76,5 +76,3 @@ backToTopBtn.addEventListener('click', () => {
 
 
 
-
-
