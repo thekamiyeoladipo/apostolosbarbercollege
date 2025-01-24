@@ -13,6 +13,7 @@
     "tailwindcss": "^3.4.17"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "pagedone": "^1.2.2"
   }
 }
