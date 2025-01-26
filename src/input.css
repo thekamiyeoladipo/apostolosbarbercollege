@@ -325,7 +325,23 @@ section {
   /* Why Choose us */
 
   /* Grads */
-  
+
+  #grad {
+    background-color: #143FDB;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-slide {
+    animation: slide 20s linear infinite;
+    display: flex;
+  }
 
 
 
