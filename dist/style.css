@@ -1156,10 +1156,6 @@ video {
   font-weight: 800;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .font-medium {
   font-weight: 500;
 }
@@ -1330,6 +1326,8 @@ video {
   list-style-type: none;
 }
 
+/* font-family: "Open Sans", sans-serif; */
+
 h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -1344,7 +1342,7 @@ h3 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: normal;
 }
 
@@ -1836,11 +1834,6 @@ section {
 .dark\:text-gray-300:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-gray-400:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(156 163 175 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-white:is(.dark *) {
