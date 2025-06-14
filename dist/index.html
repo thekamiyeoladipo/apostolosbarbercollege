@@ -36,11 +36,11 @@
 </head>
 <body>
   <!--Preloader-->
-  <div id="preloader" class="preloader">
+ <!-- <div id="preloader" class="preloader">
     <img id="ball" class="ball" src="img/favicon.svg" alt="Apostolos Barber College favicon spinning ball preloader">
-  </div>
+  </div> -->
 
-  <!--Back to top button-->
+  <!-- Back to top button-->
   <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
     <i class="bi bi-arrow-up" aria-hidden="true"></i>
     <!-- <i class="bi bi-arrow-up" aria-hidden="true"></i> -->
@@ -237,19 +237,47 @@
 
   <!--About Section-->
   <section id="about" class="bg-white">
+    <div class="decorative-circle decorative-circle-1"></div>
+    <div class="decorative-circle decorative-circle-2"></div>
     <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
       <div class="font-bold text-white sm:text-lg">
-        <h2 data-aos="zoom-in" data-aos-duration="2000"
-          class="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">About the College</h2>
-        <p data-aos="zoom-in" data-aos-duration="1500"
-        class="mb-4">
+        <h2 data-aos="zoom-in" data-aos-duration="2000" class="mb-4 text-4xl tracking-tight font-extrabold text-white dark:text-white">About the College</h2>
+        <p data-aos="zoom-in" data-aos-duration="1500" class="mb-4">
           The Apostolos Barber College is the First Barber College with Full Fledge boarding facility in Africa. The Apostolos
           Barber College is a place where giants in the barbering industry are raised. We have raised several stakeholders in
-          the barbering industry. This is a place where barber’s career is perfectly tailored.
+          the barbering industry. This is a place where barber's career is perfectly tailored.
         </p>
-        <p data-aos="zoom-in" data-aos-duration="1500" >
-          This is a place to learn, unlearn and relearn. This is the last place of upgrade.
+        <p data-aos="zoom-in" data-aos-duration="1500">
+          This is a place to learn, unlearn and relearn. This is the last place of upgrade.
         </p>
+        
+        <!-- Key Features -->
+        <div class="key-features">
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Professional Training</span>
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Modern Facilities</span>
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Expert Instructors</span>
+          </div>
+          <div class="feature-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            <span>Career Support</span>
+          </div>
+        </div>
       </div>
       <div data-aos="fade-up" data-aos-duration="2000" class="grid grid-cols-2 gap-4 mt-8">
         <img class="w-full rounded-lg" src="assets/WhatsApp Image 2025-01-16 at 05.24.25.jpeg" alt="Barber College classroom scene">
@@ -263,7 +291,7 @@
   <section id="courses" class="py-24 ">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <h2 class="font-manrope text-4xl text-center font-extrabold text-gray-900 mb-4">
+        <h2 id="prog" class="font-manrope text-4xl text-center font-extrabold text-gray-900 mb-4">
           Our Programmes
         </h2>
         <p class="text-gray-500 text-center leading-6 mb-9"></p>
@@ -284,7 +312,7 @@
       <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-8 lg:space-y-0 lg:items-center">
 
          <!--Pricing Card 1-->
-        <div data-wow-delay="0.2s" class="wow fadeInUp bg-[#1E1F26] max-w-sm mx-auto rounded-xl p-12 text-white relative">
+        <div data-wow-delay="0.2s" class="wow fadeInUp bg-[#27120D] max-w-sm mx-auto rounded-xl p-12 text-white relative">
           <!-- Most Popular Tag -->
           <!-- <div class="absolute -top-3 left-4">
             <span class="bg-yellow-400 text-black text-xs font-semibold px-2 py-2 rounded">Most Popular</span>
@@ -336,7 +364,7 @@
         </div>
       
          <!--Pricing Card 2-->
-        <div data-wow-delay="0.4s" class="wow fadeInUp bg-[#1E1F26] max-w-sm mx-auto rounded-xl p-12 text-white relative">
+        <div data-wow-delay="0.4s" class="wow fadeInUp bg-[#27120D] max-w-sm mx-auto rounded-xl p-12 text-white relative">
           <!-- Most Popular Tag -->
           <div class="absolute -top-3 left-4">
             <span class="bg-yellow-400 text-black text-xs font-semibold px-2 py-2 rounded">Most Popular</span>
@@ -397,7 +425,7 @@
          
         </div>
         <!--Pricing Card 3-->
-          <div data-wow-delay="0.6s" class="wow fadeInUp bg-[#1E1F26] max-w-sm mx-auto rounded-xl p-12 text-white relative">
+          <div data-wow-delay="0.6s" class="wow fadeInUp bg-[#27120D] max-w-sm mx-auto rounded-xl p-12 text-white relative">
           <!-- Most Popular Tag -->
           <!-- <div class="absolute -top-3 left-4">
             <span class="bg-yellow-400 text-black text-xs font-semibold px-2 py-2 rounded">Most Popular</span>
@@ -448,7 +476,7 @@
         </div>
 
          <!--Pricing Card 4-->
-        <div data-wow-delay="0.8s" class="wow fadeInUp bg-[#1E1F26] max-w-sm mx-auto rounded-xl p-12 text-white relative">
+        <div data-wow-delay="0.8s" class="wow fadeInUp bg-[#27120D] max-w-sm mx-auto rounded-xl p-12 text-white relative">
           <!-- Most Popular Tag -->
           <!-- <div class="absolute -top-3 left-4">
             <span class="bg-yellow-400 text-black text-xs font-semibold px-2 py-2 rounded">Most Popular</span>
@@ -500,7 +528,7 @@
         </div>
 
         <!--Pricing Card 5-->
-        <div data-wow-delay="1s" class="wow fadeInUp bg-[#1E1F26] max-w-sm mx-auto rounded-xl p-12 text-white relative">
+        <div data-wow-delay="1s" class="wow fadeInUp bg-[#27120D] max-w-sm mx-auto rounded-xl p-12 text-white relative">
           <!-- Most Popular Tag -->
           <!-- <div class="absolute -top-3 left-4">
             <span class="bg-yellow-400 text-black text-xs font-semibold px-2 py-2 rounded">Most Popular</span>
