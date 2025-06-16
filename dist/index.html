@@ -211,7 +211,14 @@
     class="hero-section relative w-full h-screen text-white flex items-center justify-center text-center px-4">
     <!-- MP4 Video Background -->
     <div class="absolute inset-0">
-      <video autoplay muted loop class="w-full h-full object-cover">
+      <video 
+      autoplay 
+      muted 
+      playsinline
+      preload="auto"
+      loop 
+      fallback=""
+      class="absolute top-0 left-0 z-10 w-full h-full object-cover">
         <source src="assets/VID-20250116-WA0062.mp4" type="video/mp4" />
       </video>
     </div>
