@@ -73,5 +73,61 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
+// Custom event tracking
+document.addEventListener('DOMContentLoaded', function() {
+    // Track program card clicks
+    const programCards = document.querySelectorAll('.program-card');
+    programCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const programName = this.querySelector('h2').textContent;
+            gtag('event', 'program_click', {
+                'program_name': programName
+            });
+        });
+    });
+
+    // Track WhatsApp button clicks
+    const whatsappButtons = document.querySelectorAll('a[href*="wa.link"]');
+    whatsappButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            gtag('event', 'whatsapp_click', {
+                'button_location': this.closest('section')?.id || 'unknown'
+            });
+        });
+    });
+
+    // Track form submissions
+    const contactForm = document.querySelector('form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            gtag('event', 'form_submission', {
+                'form_name': 'contact_form'
+            });
+        });
+    }
+
+    // Track scroll depth
+    let maxScroll = 0;
+    window.addEventListener('scroll', function() {
+        const scrollPercent = (window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100;
+        if (scrollPercent > maxScroll) {
+            maxScroll = scrollPercent;
+            if (maxScroll >= 25 && maxScroll < 50) {
+                gtag('event', 'scroll_depth', {
+                    'depth': '25%'
+                });
+            } else if (maxScroll >= 50 && maxScroll < 75) {
+                gtag('event', 'scroll_depth', {
+                    'depth': '50%'
+                });
+            } else if (maxScroll >= 75) {
+                gtag('event', 'scroll_depth', {
+                    'depth': '75%'
+                });
+            }
+        }
+    });
+});
+
 
 
