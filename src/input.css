@@ -642,9 +642,7 @@ section {
 
   /* Grads */
 
-  #grad {
-    background-color: #143FDB;
-  }
+
   @keyframes slide {
     from {
       transform: translateX(0);
