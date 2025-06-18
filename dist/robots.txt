@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /assets/
-Disallow: /img/
 
 Sitemap: https://apostolosbarbercollege.com/sitemap.xml 
