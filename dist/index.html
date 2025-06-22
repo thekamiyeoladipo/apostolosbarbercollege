@@ -77,14 +77,14 @@
     </div>
 
   <!-- Back to top button-->
-  <button id="back-to-top" class="back-to-top-</div>btn" aria-label="Back to top">
+  <button id="back-to-top" class="back-to-top-btn" aria-label="Back to top">
     <i class="bi bi-arrow-up" aria-hidden="true"></i>
     <!-- <i class="bi bi-arrow-up" aria-hidden="true"></i> -->
   </button>
 
 
   <!--Main navigation-->
-  <nav id="nav" class="text-white p-4 flex justify-around items-center">
+  <nav id="nav" class="text-white p-4 flex justify-between items-center">
     
     <!-- Center: Logo -->
     <div class="text-center">
@@ -92,7 +92,53 @@
     </div>
 
     <!-- Left: Social Media Links -->
-    <div class="flex space-x-6">
+   
+
+    <!-- Right: Navlinks -->
+    <div class="hidden lg:flex space-x-8">
+      <a href="#home" class="hover:text-gray-300">Home</a>
+      <a href="#about" class="hover:text-gray-300">About</a>
+      <a href="#courses" class="hover:text-gray-300">Courses/Programs</a>
+      <a href="#grad" class="hover:text-gray-300">Graduands</a>
+      <a href="#contact" class="hover:text-gray-300">Get in Touch<a>
+          <!-- CTA Button -->
+          <a href="https://wa.link/sezu1s" target="_blank"
+            class="border border-blue-800 px-12  text-white font-medium rounded-md hover:bg-white hover:text-black transition duration-300">
+            Join Us
+          </a>
+          <!-- <a id="cv" href="#contact" class="hover:text-gray-300"><b>CV</b></a> -->
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="lg:hidden mt-2">
+      <button id="menu-btn" class="focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="black" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu"
+    class="fixed top-0 left-0 w-2/4 h-full text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+    <button id="close-menu-btn" class="p-4 opacity-0">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <nav class="mt-10 space-y-4">
+      <ul>
+        <li><a href="#home" class="block px-5 py-2 opacity-0">Home</a></li>
+        <li><a href="#about" class="block px-5 py-2 opacity-0">About the college</a></li>
+        <li><a href="#courses" class="block px-5 py-2 opacity-0">Our Courses & Programs</a></li>
+        <li><a href="#grad" class="block px-5 py-2 opacity-0"> Our Graduands<a></li>
+        <li><a href="#contact" class="block px-5 py-2 opacity-0">Get in Touch<a></li>
+      </ul>
+    </nav>
+    <!--Social media links-->
+     <div class="flex space-x-6">
       <a href="https://www.instagram.com/apostolos_barber_college_/" aria-label="" target="_blank">
         <!-- Instagram Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
@@ -195,50 +241,6 @@
       </a>
 
     </div>
-
-    <!-- Right: Navlinks -->
-    <div class="hidden lg:flex space-x-8">
-      <a href="#home" class="hover:text-gray-300">Home</a>
-      <a href="#about" class="hover:text-gray-300">About</a>
-      <a href="#courses" class="hover:text-gray-300">Courses/Programs</a>
-      <a href="#grad" class="hover:text-gray-300">Graduands</a>
-      <a href="#contact" class="hover:text-gray-300">Get in Touch<a>
-          <!-- CTA Button -->
-          <a href="https://wa.link/sezu1s" target="_blank"
-            class="border border-blue-800 px-12  text-white font-medium rounded-md hover:bg-white hover:text-black transition duration-300">
-            Join Us
-          </a>
-          <!-- <a id="cv" href="#contact" class="hover:text-gray-300"><b>CV</b></a> -->
-    </div>
-
-    <!-- Mobile Menu Button -->
-    <div class="lg:hidden mt-2">
-      <button id="menu-btn" class="focus:outline-none">
-        <svg class="w-6 h-6" fill="none" stroke="black" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  </nav>
-
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu"
-    class="fixed top-0 left-0 w-2/4 h-full text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
-    <button id="close-menu-btn" class="p-4 opacity-0">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-    <nav class="mt-10 space-y-4">
-      <ul>
-        <li><a href="#home" class="block px-5 py-2 opacity-0">Home</a></li>
-        <li><a href="#about" class="block px-5 py-2 opacity-0">About the college</a></li>
-        <li><a href="#courses" class="block px-5 py-2 opacity-0">Our Courses & Programs</a></li>
-        <li><a href="#grad" class="block px-5 py-2 opacity-0"> Our Graduands<a></li>
-        <li><a href="#contact" class="block px-5 py-2 opacity-0">Get in Touch<a></li>
-      </ul>
-    </nav>
   </div>
 
 
