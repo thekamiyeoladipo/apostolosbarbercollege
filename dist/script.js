@@ -35,23 +35,42 @@ function closeMenu() {
 
 
 // Preloader
-document.addEventListener("DOMContentLoaded", function() {
-  const preloader = document.getElementById('preloader');
-  const ball = document.getElementById('ball');
+document.addEventListener("DOMContentLoaded", function () {
+  const preloader = document.getElementById("preloader");
+  const ball = document.getElementById("ball");
   let bounceCount = 0;
 
-  ball.addEventListener('animationiteration', () => {
+  ball.addEventListener("animationiteration", () => {
     bounceCount++;
     if (bounceCount === 4) {
-      ball.classList.add('fade-out');
+      // Start fading out the ball
+      ball.classList.add("fade-out");
+
       setTimeout(() => {
-        preloader.style.display = 'none';
-        const content = document.getElementById('content');
-        content.classList.add('visible');
-      }, 600);
+        // Hide the preloader
+        preloader.style.display = "none";
+
+        // Show main content
+        const content = document.getElementById("content");
+        content.classList.add("visible");
+
+        // ✅ Now start the scramble effect
+        gsap.registerPlugin(ScrambleTextPlugin);
+        gsap.to(".apos", {
+          duration: 2,
+          scrambleText: {
+            text: "Welcome To The First Barber College in Africa",
+            chars: "!<>-_\\/[]{}—=+*^?#________",
+            revealDelay: 0.5,
+            speed: 0.3
+          }
+        });
+
+      }, 600); // matches your fade-out delay
     }
   });
 });
+
 
 
 const backToTopBtn = document.getElementById('back-to-top');
@@ -128,6 +147,5 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
 
 
